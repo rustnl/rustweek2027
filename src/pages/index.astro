@@ -20,60 +20,47 @@ const { greg, taylor, andreea, alice, waffle, aeva } = useData(people);
 const speakers = [taylor, greg, andreea, alice, waffle, aeva];
 ---
 
-<HeroLayout title="RustWeek 2026">
+<HeroLayout title="RustWeek 2027">
   <Fragment slot="hero">
     <div>
-      <h1 class="font-display">RustWeek 2026</h1>
-      <h2>May 18-23 — Utrecht, NL</h2>
+      <h1 class="font-display">RustWeek 2027</h1>
+      <h2>May 24-29 — Utrecht, NL</h2>
     </div>
     <p>
       The world's biggest Rust conference includes one day of workshops, two
       days of talks, a hackathon, social activities, and more!
     </p>
-    <ButtonGroup style="cutout" align="left">
-        <Button
-          link="https://event.onliveevent.nl/rustweek-2026"
-          >Tickets</>
-        <Button link="#week-schedule" ty="secondary">Week schedule</Button>
-    </ButtonGroup>
-
+    <p>
+        <a href="https://event.onliveevent.nl/rustweek-2027">Get your early-bird tickets now!</a>
+    </p>
   </Fragment>
   <OneColumn>
     <div class="markdown">
-      <h2 id="explainer">RustWeek 2026</h2>
+      <h2 id="explainer">RustWeek 2027</h2>
       <p>
         The world's biggest Rust conference returns to beautiful Utrecht,
         welcoming over 900+ community members, professionals and the maintainers
         of Rust.
       </p>
-      <p style="margin-block-end: 0;">
-        The week includes one day of workshops, two days of talks, a hackathon,
-        and social activities. Additionally, we're hosting an unconference, and
-        our second Rust Project All Hands!
-      </p>
-      <p>
-          <a href="https://discord.gg/FSwaWZdk6k" target="_blank" class="button button-primary">Join our discord</a> to discuss social activities and find others before the event
-      </p>
     </div>
   </OneColumn>
-  <MainSchedule />
   <PeopleList
-    title="Speakers"
+    title="Last year's speakers"
     id="speakers"
     lead=""
     random={false}
   >
     {
       speakers.map((speaker: any) => (
-        <Speaker talkId={speaker.talk.id} smalltile {...speaker} />
+        <Speaker smalltile {...speaker} />
       ))
     }
   </PeopleList>
       <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
       <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
           And so many more!
-          <Button link="/speakers">
-              All speakers
+        <Button link="https://2026.rustweek.org/speakers">
+              All last year's speakers
           </Button>
       </div>
       </div>
@@ -84,14 +71,10 @@ const speakers = [taylor, greg, andreea, alice, waffle, aeva];
   <Location />
   <Sponsors id="sponsors">
     <div slot="header" class="markdown">
-      <h2>Our sponsors</h2>
-      <p>
-        Interested in sponsoring? Download our <a
-          target="_blank"
-          href="/resources/sponsorship-prospectus-rustweek-2026.pdf"
-          >Sponsorship prospectus</a
-        > or <a href="mailto:sponsors@rustnl.org">contact us</a>
-      </p>
+        <h2>Our sponsors from RustWeek 2026</h2>
+        <p>
+                Want to sponsor us next year? Send us an email at <a href="mailto://rustweek@rustnl.org">rustweek@rustnl.org</a>!
+        </p>
     </div>
     <SponsorTier name="Diamond sponsors">
       <Sponsor

@@ -1,4 +1,4 @@
-# RustWeek 2025 Website
+# RustWeek 2027 Website
 
 The website is built with [Astro](https://astro.build/).
 

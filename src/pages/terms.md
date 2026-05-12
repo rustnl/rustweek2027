@@ -3,7 +3,7 @@ layout: "../layouts/PageLayout.astro"
 title: "Terms & Conditions"
 ---
 
-**Terms & Conditions – RustWeek 2026**
+**Terms & Conditions – RustWeek 2027**
 
 Organizer: Stichting Rust Nederland  
 Leeuwerikstraat 13, 6542 XH Nijmegen, The Netherlands  
@@ -12,15 +12,13 @@ Company Reg. No.: 76457761 (NL)
 Email: info@rustnl.org
 
 Event details:  
-RustWeek 2026, organized by Stichting Rust Nederland, will take place from 18 to 22 May 2026 in The Netherlands. The conference portion is scheduled for 19 and 20 May 2026.
+RustWeek 2027, organized by Stichting Rust Nederland, will take place from 24 to 29 May 2027 in The Netherlands. The conference portion is scheduled for 25 and 26 May 2027.
 
 **1\. Ticket types and validity**
 
 *   Conference – Individual: For attendees paying their own ticket. If your employer covers the cost, you must purchase an employer-paid ticket.
 *   Conference – Employer-paid: For attendees whose ticket cost is reimbursed or paid by their employer.
 *   Conference – Student: Available only to currently enrolled students at a recognized university. A valid student ID will be required at check-in.
-
-Early Bird Pricing: Available until 1 December 2025.
 
 Tickets are valid only for the dates and activities stated. Tickets are non-transferable.
 

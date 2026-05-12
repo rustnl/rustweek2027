@@ -8,47 +8,9 @@ const { location }: Props = Astro.props;
 
 <div class:list={["menu", location]} aria-label="Main menu">
   <ul role="menubar">
-    <li class="parent" role="menuitem">
-      <h2>Schedule</h2>
-      <ul class="submenu" role="menu">
-        <!--     <li> -->
-        <!--       <a href="/events/pre-registration" role="menuitem"><span>mon</span>Pre-registration</a> -->
-        <!--     </li> -->
-        <li class="child" role="menuitem">
-          <a
-            href="/overview"
-            >Overview of the week</a
-          >
-        </li>
-        <li class="child" role="menuitem">
-          <a href="/workshops"><span>mon</span>Workshops</a>
-        </li>
-        <li class="child" role="menuitem">
-          <a href="/schedule/tuesday"><span>tue</span>Conference day 1</a>
-        </li>
-        <li class="child" role="menuitem">
-          <a href="/schedule/wednesday"><span>wed</span>Conference day 2</a>
-        </li>
-        <!-- <li class="child" role="menuitem">
-          <a href="/industry">Industry Track</a>
-        </li> -->
-        <li>
-          <a href="/events/hackathon" role="menuitem"><span>thu</span>Hackathon</a>
-        </li>
-        <li class="child" role="menuitem">
-          <a href="/events/social-activities" >Social activities</a>
-        </li>
-        <li class="child" role="menuitem">
-          <a href="/overview#list">List of all events</a>
-        </li>
-      </ul>
-    </li>
   </ul>
   <li class="parent" role="menuitem">
-    <a href="/speakers"> Speakers </a>
-  </li>
-  <li class="parent" role="menuitem">
-    <a href="/#sponsors">Sponsors</a>
+    <a href="/#speakers"> Speakers </a>
   </li>
   <li class="parent" role="menuitem">
     <h2>Practical</h2>
@@ -57,23 +19,8 @@ const { location }: Props = Astro.props;
         <a href="/getting-there">Getting there</a>
       </li>
       <li class="child" role="menuitem">
-        <a href="/hotels">Hotels</a>
-      </li>
-      <li class="child" role="menuitem">
         <a href="/utrecht">About Utrecht</a>
       </li>
-      <li class="child" role="menuitem">
-        <a href="/kinepolis">Conference venue</a>
-      </li>
-      <li class="child" role="menuitem">
-        <a href="/beatrixgebouw">Workshop venue</a>
-      </li>
-      <li class="child" role="menuitem">
-        <a href="/dus">Unconf & All-Hands venue</a>
-      </li>
-      <!-- <li class="child" role="menuitem">
-          <a href="/hotels">Hotels</a>
-        </li> -->
       <li class="child" role="menuitem">
         <a href="/accessibility">Accessibility</a>
       </li>
@@ -92,7 +39,7 @@ const { location }: Props = Astro.props;
         <a
           href="/#sponsors"
           onclick="document.querySelector('[data-menu-toggle]').click()"
-          >Our sponsors</a
+          >Sponsoring RustWeek</a
         >
       </li>
       <li class="child">
