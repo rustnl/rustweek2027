@@ -30,20 +30,28 @@ const speakers = [taylor, greg, andreea, alice, waffle, aeva];
       The world's biggest Rust conference includes one day of workshops, two
       days of talks, a hackathon, social activities, and more!
     </p>
-    <p style="font-size: 1.4em;">
-        <a href="https://event.onliveevent.nl/rustweek-2027">Get your tickets now!</a>
-    </p>
+        <ButtonGroup style="cutout" align="left">
+        <Button link="#week-schedule" ty="secondary">Week schedule</Button>
+        <Button
+            link="https://event.onliveevent.nl/rustweek-2027"
+          >Tickets</>
+    </ButtonGroup>
   </Fragment>
   <OneColumn>
     <div class="markdown">
       <h2 id="explainer">RustWeek 2027</h2>
       <p>
-        The world's biggest Rust conference returns to beautiful Utrecht,
-        welcoming over 900+ community members, professionals and the maintainers
+        RustWeek returns to beautiful Utrecht, welcoming over 950+ community members, professionals and the maintainers
         of Rust.
+      </p>
+      <p style="margin-block-end: 0;">
+        The week includes one day of workshops, two days of talks, a hackathon,
+        and social activities. Additionally, we're hosting an unconference, and
+        our third Rust Project All Hands!
       </p>
     </div>
   </OneColumn>
+  <MainSchedule />
   <PeopleList
     title="Last year's speakers"
     id="speakers"
