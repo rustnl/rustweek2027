@@ -1,7 +1,7 @@
 ---
 interface Props {
-    src: string,
-    alt: string,
+    src: string;
+    alt: string;
 }
 
 const { src, alt }: Props = Astro.props;
@@ -12,7 +12,8 @@ const { src, alt }: Props = Astro.props;
         aspect-ratio: 4 / 3;
         background-color: #222;
         border-radius: 50% 0 50% 0;
-        margin-block: 6%;
+        margin-block-start: 6%;
+        margin-block-end: 12%;
         overflow: clip;
         position: relative;
     }
@@ -29,7 +30,9 @@ const { src, alt }: Props = Astro.props;
 </style>
 
 <section class="container md:grid md:cols-12">
-    <div class="md:col-start-3 md:col-end-11 xl:col-start-3 xl:col-end-11 cutout cutout-hero">
+    <div
+        class="md:col-start-3 md:col-end-11 xl:col-start-3 xl:col-end-11 cutout cutout-hero"
+    >
         <div class="image">
             <img src={src} alt={alt} />
         </div>
