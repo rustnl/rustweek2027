@@ -8,9 +8,25 @@ const { location }: Props = Astro.props;
 
 <div class:list={["menu", location]} aria-label="Main menu">
   <ul role="menubar">
-  </ul>
   <li class="parent" role="menuitem">
-    <a href="/#speakers"> Speakers </a>
+    <h2>Schedule</h2>
+    <ul class="submenu" role="menu">
+      <li class="child" role="menuitem">
+        <a
+          href="/overview"
+          >Overview of the week</a
+        >
+      </li>
+    </ul>
+  </li>
+  <li class="parent" role="menuitem">
+    <a href="/cfp">CFP</a>
+  </li>
+  <li class="parent" role="menuitem">
+    <a href="/#speakers">Speakers</a>
+  </li>
+    <li class="parent" role="menuitem">
+      <a href="/#sponsors">Sponsors</a>
   </li>
   <li class="parent" role="menuitem">
     <h2>Practical</h2>
@@ -51,6 +67,7 @@ const { location }: Props = Astro.props;
   <!--     inFooter={location == "footer"}>Livestream</Button -->
   <!--   > -->
   <!-- </li> -->
+   </ul>
 </div>
 
 <style lang="scss">
