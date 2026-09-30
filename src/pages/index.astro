@@ -16,8 +16,8 @@ import OneColumn from "src/components/OneColumn.astro";
 import Cta from "src/components/Cta.astro";
 
 const people = await getCollection("people");
-const { greg, taylor, andreea, alice, waffle, aeva } = useData(people);
-const speakers = [taylor, greg, andreea, alice, waffle, aeva];
+const { esteban, emma, beatrice, jess } = useData(people);
+const speakers = [esteban, emma, beatrice, jess];
 ---
 
 <HeroLayout title="RustWeek 2027">
@@ -50,21 +50,14 @@ const speakers = [taylor, greg, andreea, alice, waffle, aeva];
     </div>
   </OneColumn>
   <MainSchedule />
-  <PeopleList title="Last year's speakers" id="speakers" lead="" random={false}>
-    {speakers.map((speaker: any) => <Speaker smalltile {...speaker} />)}
+  <PeopleList title="Invited speakers" id="speakers" lead="" random={false}>
+    {speakers.map((speaker: any) => (
+      <Speaker talkId={speaker.talk.id} tile {...speaker} />
+    ))}
   </PeopleList>
-  <div
-    style="width: 100%; display: flex; flex-direction: column; align-items: center;"
-  >
-    <div
-      style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;"
-    >
-      And so many more!
-      <Button link="https://2026.rustweek.org/speakers">
-        All last year's speakers
-      </Button>
-    </div>
-  </div>
+  <p class="container text-center" style="font-size: 1.6rem">
+    Do you also want to speak at RustWeek? Our <a href="/cfp">Call for Proposals</a> is open!
+  </p>
   <OneColumn>
     <div class="markdown">
       <h2>Rust All Hands & Unconference</h2>
@@ -331,3 +324,28 @@ const speakers = [taylor, greg, andreea, alice, waffle, aeva];
     </ButtonGroup>
   </Cta>
 </HeroLayout>
+
+<style>
+  :global(#speakers .people) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+
+  :global(#speakers .people > .person) {
+    width: 100%;
+    max-width: 18rem;
+    justify-self: center;
+  }
+
+  @media (max-width: 64rem) {
+    :global(#speakers .people) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 40rem) {
+    :global(#speakers .people) {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
