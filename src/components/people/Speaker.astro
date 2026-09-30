@@ -33,7 +33,7 @@ if (talkId) {
 
 <Person link={`/talks/${talkId}`} tracks={tracks} {...Astro.props}>
     <p class="talk">
-        <strong>Talk:</strong> <em>{talkTitle}</em>
+        <strong>Talk:</strong> <em><a href={`/talks/${talkId}`}>{talkTitle}</a></em>
     </p>
 </Person>
 
