@@ -12,9 +12,6 @@ const {align_end = false}: Props = Astro.props;
     <h4>
         <slot name="header" />
     </h4>
-    <span class="attendees">
-        <slot name="attendees" />
-    </span>
     <div class="activities">
         <p class="time">
             <slot name="time" />
@@ -25,7 +22,6 @@ const {align_end = false}: Props = Astro.props;
 
 <style lang="scss">
     @use "../../styles/variables.scss";
-    @use "../../styles/breakpoint.scss";
 
     .align-end {
         margin-top: auto;
@@ -44,15 +40,11 @@ const {align_end = false}: Props = Astro.props;
             margin-bottom: 0em;
         }
 
-        .attendees + .activities {
-            margin-top: 0.2em;
-        }
-
         .activities {
             display: flex;
 
             margin: 0;
-            margin-top: 0.4em;
+            margin-top: 0.2em;
             padding: 0;
             flex-direction: column;
 
@@ -63,23 +55,6 @@ const {align_end = false}: Props = Astro.props;
                 padding: 0;
                 margin-bottom: 0.4em;
                 line-height: 1em;
-            }
-        }
-
-        .attendees {
-            display: none;
-
-            font-size: variables.$font-size-sm;
-            color: variables.$color-purple-900;
-            font-weight: 500;
-            font-style: italic;
-
-            @include breakpoint.wider_than(lg) {
-                font-size: variables.$font-size-sm;
-            }
-
-            *:only-child {
-                display: none;
             }
         }
 
