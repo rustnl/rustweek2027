@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const talks = await getCollection("talks");
@@ -21,6 +21,7 @@ import SpeakerList from "../../components/people/PeopleList.astro"
 
 const { talk } = Astro.props;
 let { title, level, day, draft } = talk.data;
+const { Content } = await render(talk);
 const people = await getCollection("people");
 
 function comma_separate(iterable: Iterable<string>): string {
@@ -77,7 +78,7 @@ if (draft) {
 
   <OneColumn>
       {!draft && (
-        <div class="markdown" set:html={talk.rendered?.html} />
+        <div class="markdown"><Content /></div>
       )}
   </OneColumn>
   <SpeakerList ty="single-column">
