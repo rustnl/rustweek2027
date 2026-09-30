@@ -88,7 +88,9 @@ const imageFile = image ? `/images/people/${image}` : empty_path;
   <div class="info">
     <div>
         <div class="title">
-            <h3 class="font-display">{name}</h3>
+            <h3 class="font-display">
+              {link ? <a href={link}>{name}</a> : name}
+            </h3>
             {pronouns !== null && (<Pronouns pronouns={pronouns} />)}
         </div>
         {smalltile && summary && <div class="title">{summary}</div>}
@@ -257,6 +259,10 @@ const imageFile = image ? `/images/people/${image}` : empty_path;
 
   .person h3 {
     font-size: var(--font-size-lg);
+  }
+
+  .person h3 a {
+    text-decoration: none;
   }
 
   .person .socials {
