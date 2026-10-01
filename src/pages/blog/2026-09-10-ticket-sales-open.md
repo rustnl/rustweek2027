@@ -13,7 +13,7 @@ The world's biggest Rust conference returns to beautiful Utrecht in 2027, welcom
 
 **Ticket prices for individuals and students**
 
-We lowered the ticket prices for individuals: privately-paid tickets for the conference are now 199 instead of 249 euro in 2026. A checkbox enables an additional 100 euro discount for those who can't afford the full price ✨️️.
+We lowered the ticket prices for individuals: privately-paid tickets for the conference are now 199 instead of 249 euro in 2026. A checkbox enables an additional 100 euro discount for those who can't afford the full price. ✨️️
 
 Same as previous years we offer student tickets for 35 euro. It is now also possible for students to purchase a workshop ticket.
 
