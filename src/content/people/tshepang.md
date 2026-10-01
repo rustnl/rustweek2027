@@ -1,7 +1,7 @@
 ---
 name: "Tshepang Mbambo"
 image: "tshepang.jpg"
-title: "Team lead of the Rustc dev guide"
+title: "Lead of the rustc-dev-guide team"
 org: ""
 url: "https://tshepang.github.io/"
 bluesky: ""
