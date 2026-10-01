@@ -1,6 +1,6 @@
 ---
 tracks: [industry]
-title: "The Rust Commercial Network"
+title: "Securing and sustaining Rust: Supply chain security and maintainer support"
 level: ""
 tags: []
 duration: 30
