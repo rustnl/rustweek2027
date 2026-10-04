@@ -1,6 +1,6 @@
 ---
 tracks: [main]
-title: "[Talk title TBA]"
+title: "Building Rust for Humans"
 level: ""
 tags: []
 duration: 30
