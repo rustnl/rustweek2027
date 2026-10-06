@@ -27,7 +27,7 @@ Some notes on the accessibility of our conference:
   rustweek@rustnl.org.
 
 - We're providing specially priced student tickets. We also provide a €100
-  discount for people who can't afford the full price of the conference.
+  discount on privately-paid tickets for people who can't afford the full price of the conference.
 
 - We provide free tickets for assistants of attendees who need assistance.
   Contact us at rustweek@rustnl.nl if you need this.
