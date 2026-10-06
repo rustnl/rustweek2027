@@ -6,7 +6,7 @@ title: "Terms & Conditions"
 **Terms & Conditions – RustWeek 2027**
 
 Organizer: Stichting Rust Nederland  
-Leeuwerikstraat 13, 6542 XH Nijmegen, The Netherlands  
+Brabantse Turfmarkt 46, 2611 CP Delft, The Netherlands  
 VAT: NL8606 29 764 B01  
 Company Reg. No.: 76457761 (NL)  
 Email: info@rustnl.org
@@ -16,20 +16,19 @@ RustWeek 2027, organized by Stichting Rust Nederland, will take place from 24 to
 
 **1\. Ticket types and validity**
 
-*   Conference – Individual: For attendees paying their own ticket. If your employer covers the cost, you must purchase an employer-paid ticket.
+*   Conference – Privately-paid: For attendees paying their own ticket. If your employer covers the cost, you must purchase an employer-paid ticket.
 *   Conference – Employer-paid: For attendees whose ticket cost is reimbursed or paid by their employer.
-*   Conference – Student: Available only to currently enrolled students at a recognized university. A valid student ID will be required at check-in.
+*   Conference – Student: Available only to currently enrolled students at a recognized university.
 
-Tickets are valid only for the dates and activities stated. Tickets are non-transferable.
+Tickets are valid only for the dates and activities stated.
 
 **2\. Code of Conduct**  
-By attending RustWeek 2026, you agree to abide by the event’s [Code of Conduct](/code-of-conduct). Violations may result in removal from the event without a refund.
+By attending RustWeek, you agree to abide by the event’s [Code of Conduct](/code-of-conduct). Violations may result in removal from the event without a refund.
 
 **3\. Cancellations & Refunds**  
-Cancellations must be requested by 8 May 2026.  
+Cancellations must be requested by May 14, 2027.  
 A full refund will be issued for cancellations submitted by this date.  
-No refunds will be processed for cancellations received after this date.  
-Tickets are non-transferable.  
+No refunds will be processed for cancellations received after this date.   
 To request a cancellation, follow the instructions in your order confirmation email.
 
 **4\. Event changes and liability**  
@@ -40,7 +39,7 @@ Attendance is at the participant’s own risk.
 **5\. Governing law**  
 These Terms & Conditions are governed by the laws of The Netherlands.
 
-**Privacy Policy – RustWeek 2026**
+**Privacy Policy – RustWeek**
 
 Effective date: 1 September 2025  
 Organizer: Stichting Rust Nederland  
@@ -56,8 +55,9 @@ Ticket selection and preferences
 Your personal data is used solely for:  
 Processing your registration and issuing your ticket  
 Communicating essential event updates  
-Managing on-site check-in and participation  
-We do not share your personal data with sponsors or third parties for marketing purposes.
+Managing on-site check-in and participation
+Use your organization name to create a list of companies attending the event and share the list with potential sponsors
+We do not share any other personal data with sponsors or third parties for marketing purposes
 
 **3\. Data processing and storage**  
 Registration is managed by Onlive Event, acting as a sub-processor, in compliance with GDPR and other applicable laws.  
