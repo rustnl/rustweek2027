@@ -26,7 +26,7 @@ Tickets are valid only for the dates and activities stated.
 By attending RustWeek, you agree to abide by the event’s [Code of Conduct](/code-of-conduct). Violations may result in removal from the event without a refund.
 
 **3\. Cancellations & Refunds**  
-Cancellations must be requested before May 14, 2027.  
+Cancellations must be requested by May 14, 2027.  
 A full refund will be issued for cancellations submitted by this date.  
 No refunds will be processed for cancellations received after this date.   
 To request a cancellation, follow the instructions in your order confirmation email.
