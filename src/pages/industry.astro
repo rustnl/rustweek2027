@@ -1,0 +1,269 @@
+---
+import HeroLayout from "../layouts/HeroLayout.astro";
+import Button from "../components/Button.astro";
+import ButtonGroup from "../components/ButtonGroup.astro";
+import Image from "../components/Image.astro";
+import Speaker from "src/components/people/Speaker.astro";
+import PeopleList from "src/components/people/PeopleList.astro";
+import Sponsors from "src/components/sponsor/Sponsors.astro";
+import SponsorTier from "src/components/sponsor/sponsor-tier.astro";
+import Sponsor from "src/components/sponsor/sponsor.astro";
+import { useData } from "../components/useData";
+import { getCollection } from "astro:content";
+import OneColumn from "src/components/OneColumn.astro";
+
+const people = await getCollection("people");
+const { jess } = useData(people);
+const speakers = [jess];
+---
+
+<HeroLayout title="Industry Track" slidedeck="industry">
+  <Fragment slot="hero">
+    <div>
+      <h1 class="font-display">Industry Track</h1>
+      <h2>25 May 2027 — Utrecht, NL</h2>
+    </div>
+    <p>
+      The must-attend track for decision makers exploring the adoption of Rust
+      in their organisation.
+    </p>
+    <ButtonGroup style="cutout" align="left">
+      <Button link="#schedule" ty="secondary">Schedule</Button>
+      <Button link="https://event.onliveevent.nl/rustweek-2027">Tickets</Button>
+    </ButtonGroup>
+  </Fragment>
+  <OneColumn>
+    <div class="markdown">
+      <h2 id="explainer">Industry Track</h2>
+      <p>
+        Date & time: Tuesday 25 May, 9:30 - 17:00 CET.
+      </p>
+      <p style="margin-block-end: 0;">
+        The morning program will be open to anyone with a valid RustWeek ticket. Speakers include invited speaker Jess Izen.
+      </p>
+      <p style="margin-block-end: 0;">
+        The afternoon is reserved for the Expert Table Sessions, where you can meet both your peers who are pursuing the same goals, and the experts who know the ins and outs of reaching those goals. To attend the Expert Tables in the afternoon, please make sure to buy the add-on "Industry Track Expert tables participation" when you register for RustWeek.
+      </p>
+    </div>
+  </OneColumn>
+  <OneColumn>
+    <div class="markdown">
+      <h2 id="schedule">Schedule</h2>
+      <p><i>Details will be announced after the CfP closes and talks are selected in January 2027.</i></p>
+      <p><b>Morning:</b> Talks, open to all</p>
+      <p><b>Lunch:</b> Plenary</p>
+      <p><b>Afternoon:</b> Expert Table sessions, exclusive to Industry Add-on ticket holders</p>
+      <p><b>Drinks:</b> Plenary</p>
+      <!-- 2026 schedule:
+      <Timetable>
+        <TimetableItem time="9.00" title="Registration" />
+        <TimetableItem time="9.30" title="Opening" speaker="Hugo van de Pol" />
+        <TimetableItem
+          time="09.40"
+          title="Popping the Hood on Rust in the 2026 Toyota RAV4"
+          speaker="Pete LeVasseur - Woven by Toyota"
+        />
+        <TimetableItem
+          time="10.25"
+          title="Rustaceans on The Move - The Global Impact of Rust"
+          speaker="Lori Lorusso - Rust Foundation"
+        />
+        <TimetableItem
+          time="10.45"
+          title="Tales of a transformation journey at Proton"
+          speaker="Jeremy Lempereur - Proton AG"
+        />
+        <TimetableItem time="11.00" title="Break" />
+        <TimetableItem
+          time="11.40"
+          title="Scaling up Rust development at the Dutch Electoral Council"
+          speaker="Mark Janssen - Dutch Electoral Council"
+        />
+        <TimetableItem
+          time="12.25"
+          title="Rust for Secure and Sustainable Smart Metering"
+          speaker="Ron van der Pols"
+        />
+        <TimetableItem time="12.45" title="Lunch" />
+        <TimetableItem
+          time="14.00"
+          title="Opening afternoon program (Industry Room)"
+          speaker="Hugo van de Pol"
+        />
+        <TimetableItem
+          time="14.15"
+          title="Expert Tables & Networking Round 1"
+          speaker="Various industry experts"
+        />
+        <TimetableItem
+          time="15.00"
+          title="Live recording of 'Rust in Production: Oxidizing the Linux Kernel'"
+          speaker="Matthias Endler, Greg Kroah-Hartman, Alice Ryhl"
+        />
+        <TimetableItem time="15.50" title="Break" />
+        <TimetableItem
+          time="16.20"
+          title="Expert Tables & Networking Round 2"
+          speaker="Various industry experts"
+        />
+        <TimetableItem time="17.05" title="Closing" speaker="Hugo van de Pol" />
+        <TimetableItem time="17.20" title="Drinks" />
+      </Timetable>
+      -->
+    </div>
+  </OneColumn>
+  <OneColumn>
+    <div class="markdown">
+      <h2 class="header space-y-6" id="tickets">Tickets</h2>
+      <p>
+        The morning program of the Industry Track requires a regular RustWeek
+        ticket. The talks are open to all vistors of RustWeek to
+        attend; priority access will be given to those with the add-on "Industry
+        Track Expert Tables participation".
+      </p>
+      <p>
+        To attend the Expert Tables in the afternoon, the add-on "Industry Track 
+        Expert Tables participation" is required.
+      </p>
+      <ButtonGroup>
+        <Button link="https://event.onliveevent.nl/rustweek-2027">
+          Get ticket
+        </Button>
+      </ButtonGroup>
+    </div>
+  </OneColumn>
+  <PeopleList title="Speakers" id="speakers" lead="" random={false}>
+    {speakers.map((speaker: any) => (
+      <Speaker talkId={speaker.talk.id} tile {...speaker} />
+    ))}
+  </PeopleList>
+  <p class="container text-center" style="font-size: 1.6rem">
+    Do you also want to speak at RustWeek? Our <a href="/cfp">Call for Proposals</a> is open!
+  </p>
+  <Sponsors id="sponsors">
+    <div slot="header" class="markdown">
+      <h2>Our 2026 Industry Track sponsors</h2>
+      <p>
+        Interested in sponsoring RustWeek 2027 and the Industry Track? <br />Download our <a
+          target="_blank"
+          href="/resources/sponsorship-prospectus-rustweek-2027.pdf"
+          >Sponsorship prospectus</a
+        > or <a href="mailto:sponsors@rustnl.org">contact us</a>
+      </p>
+    </div>
+    <SponsorTier name="Expert Partners">
+      <Sponsor
+        name="Microsoft"
+        tier="expert-partner"
+        image="microsoft.svg"
+        link="https://www.microsoft.com/"
+      />
+      <Sponsor
+        name="RustJobs"
+        tier="expert-partner"
+        image="rustjobs.svg"
+        link="https://rustjobs.dev/"
+      />  
+      <Sponsor
+        name="Ferrous Systems"
+        tier="expert-partner"
+        image="ferrous.svg"
+        link="https://ferrous-systems.com/"
+      />
+      <Sponsor
+        name="Rocsys"
+        tier="expert-partner"
+        image="rocsys2025.png"
+        link="https://www.rocsys.com/"
+      />
+      <Sponsor
+        name="Corrode"
+        tier="expert-partner"
+        image="corrode.svg"
+        link="https://corrode.dev/"
+      />
+      <Sponsor
+        name="Volvo Cars"
+        tier="expert-partner"
+        image="volvo.png"
+        link="https://www.volvocars.com/"
+      />
+      <Sponsor
+        name="KDAB"
+        tier="expert-partner"
+        image="kdab.png"
+        link="https://www.kdab.com/"
+      />
+    </SponsorTier>
+    <SponsorTier name="Industry Partner">
+      <Sponsor
+        name="Rust Foundation"
+        tier="industry-partner"
+        image="rustfoundation.svg"
+        link="https://rustfoundation.org/"
+      />
+      <Sponsor
+        name="Technolution"
+        tier="industry-partner"
+        image="technolution.png"
+        link="https://www.technolution.com/"
+      />
+      <Sponsor
+        name="TMC"
+        tier="industry-partner"
+        image="tmc.png"
+        link="https://www.themembercompany.com/"
+      />
+      <Sponsor
+        name="Wyliodrin"
+        tier="industry-partner"
+        image="wyliodrin.svg"
+        link="https://wyliodrin.com/"
+      />
+    </SponsorTier>
+    <SponsorTier name="Powered by">
+      <Sponsor
+        name="Tweede golf"
+        tier="industry-partner"
+        image="tweede-golf-v2.png"
+        link="https://tweedegolf.nl"
+      />
+      <Sponsor
+        name="RustNL"
+        tier="industry-partner"
+        image="rustnl-logo.svg"
+        link="/about"
+      />
+    </SponsorTier>
+  </Sponsors>
+  <Image src="/images/rustweek2026/flags.jpg" alt="Flags at RustWeek 2026" />
+</HeroLayout>
+
+<style>
+  :global(#speakers .people) {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+
+  :global(#speakers .people > .person) {
+    width: 100%;
+    max-width: 18rem;
+    justify-self: center;
+  }
+
+  @media (max-width: 64rem) {
+    :global(#speakers .people) {
+      margin-left: 0;
+      margin-right: 0;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 40rem) {
+    :global(#speakers .people) {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

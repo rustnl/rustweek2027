@@ -53,7 +53,7 @@ const { title, slidedeck = "rustweek" }: Props = Astro.props;
     }
   </style>
 
-  <CommonLayout title="RustWeek 2027">
+  <CommonLayout title={title}>
     <Hero style="home" slidedeck={slidedeck}>
       <slot name="hero" />
     </Hero>
