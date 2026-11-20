@@ -30,7 +30,7 @@ const {
         rel="stylesheet"
     />
     <slot />
-    <meta property="og:url" content="https://rustweek.org/" />
+    <meta property="og:url" content={Astro.url.href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={ogDescription} />
     { ogDate &&
