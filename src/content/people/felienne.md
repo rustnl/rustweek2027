@@ -9,6 +9,7 @@ linkedin: "https://www.linkedin.com/in/felienne/"
 twitter: ""
 mastodon: ""
 github: ""
+pronouns: "she/her"
 talk: felienne
 ---
 
